@@ -5,12 +5,8 @@ submitBtn.addEventListener('click', function(e) {
     e.preventDefault()
 
     //strings value
-    const txt1 = document.querySelector('#first-string');
-    let value1 = txt1.value;
-    let length1 = value1.length;
-    const txt2 = document.querySelector('#second-string');
-    let value2 = txt2.value;
-    let length2 = value2.length;
+    let length1 = document.querySelector('#first-string').value.length;
+    let length2 = document.querySelector('#second-string').value.length;
 
     //statemente
     const statement = document.querySelector('#statement-text')

@@ -5,10 +5,8 @@ submitBtn.addEventListener('click', function(e) {
     e.preventDefault()
 
     //numbers value
-    const number1 = document.querySelector('#first-number');
-    let value1 = Number(number1.value);
-    const number2 = document.querySelector('#second-number');
-    let value2 = Number(number2.value);
+    const value1 = Number(document.querySelector('#first-number').value);
+    const value2 = Number(document.querySelector('#second-number').value);
 
     console.log(typeof value1)
 

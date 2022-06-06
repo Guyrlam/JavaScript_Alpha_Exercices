@@ -1,5 +1,5 @@
 //genre values
-let genre = document.querySelector('#genre');
+const genre = document.querySelector('#genre');
 let genValue;
 genre.addEventListener('change', function valueChange () {
     genValue = genre.options[genre.selectedIndex].value;
@@ -14,14 +14,11 @@ btnSubmit.addEventListener('click', function (e) {
 
     //birth date
     //birth day
-    let dayBth = document.querySelector('#day');
-    let dayValue = dayBth.value;
+    const dayValue = document.querySelector('#day').value;
     //birth month
-    let monthBth = document.querySelector('#month');
-    let monthValue = monthBth.value;
+    const monthValue = document.querySelector('#month').value;
     //birth year
-    let yearBth = document.querySelector('#year');
-    let yearValue = yearBth.value;
+    const yearValue = document.querySelector('#year').value;
 
     //average life
     let averageLife;
@@ -32,19 +29,19 @@ btnSubmit.addEventListener('click', function (e) {
     }
 
     //atual date
-    let atualDate = new Date;
-    let atualyear = atualDate.getFullYear();
-    let atualmonth = atualDate.getMonth() + 1;
-    let atualday = atualDate.getDate();
+    const atualDate = new Date;
+    const atualyear = atualDate.getFullYear();
+    const atualmonth = atualDate.getMonth() + 1;
+    const atualday = atualDate.getDate();
 
     //time lived
-    let yearsLived = atualyear - yearValue;
-    let monthsLived = monthValue - atualmonth;
-    let daysLived = dayValue - atualday;
-    let timelived = 365*(yearsLived) - 30*(monthsLived) - daysLived;
+    const yearsLived = atualyear - yearValue;
+    const monthsLived = monthValue - atualmonth;
+    const daysLived = dayValue - atualday;
+    const timelived = 365*(yearsLived) - 30*(monthsLived) - daysLived;
 
     //days remaining
-    let daysRemaining = averageLife - timelived;
+    const daysRemaining = averageLife - timelived;
 
     //statement-text
     const statement = document.querySelector('#statement-text');

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comparing Texts</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--style-->
+    <link rel="stylesheet" href="./style/death-date.css">
+</head>
+<body>
+
+    <!--header-->
+    <header id="header">
+        <section id="logo">Statistics Games</section>
+        <a href="../index/index.html">
+            <button>Voltar</button>
+        </a>
+    </header>
+    
+    <!--main-->
+    <main id="main">
+
+        <!--statement-->
+        <article id="statement">
+            <img src="./assets/images/mágico.png" alt="imagem de um mágico">
+            <p id="statement-text">Olá! digite abaixo o dia, mês e ano do seu nascimento e nos informe seu gênero. Feito isso, nós iremos prever quantos dias você tem de vida!</p>
+        </article>
+
+        <!--form-->
+        <form action="">
+
+            <div id="inputs">
+                <div>
+                    <div class="input-date">
+                        <label for="day">Dia:</label>
+                        <input class="barra" type="number" id="day" placeholder="exemplo: 25" required>
+                    </div>
+                    <div class="input-date">
+                        <label for="month">Mês:</label>
+                        <input class="barra" type="number" id="month" placeholder="exemplo: 12" required>
+                    </div>
+                    <div class="input-date">
+                        <label for="year">Ano:</label>
+                        <input class="barra" type="number" id="year" placeholder="exemplo: 2001" required> 
+                    </div>               
+                </div>
+                <div>
+                    <select id="genre" required>
+                        <option value="initial" selected>Gênero</option>
+                        <option value="female">Feminino</option>
+                        <option value="male">Masculino</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit" id="submit-button">Calcular</button>
+        </form>
+    </main>
+
+    <!--script-->
+    <script defer src="./script/death-date.js"></script>    
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+body {
+    overflow-x: hidden;
+    /* height: 100vh; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #efdd3ee9;
+}
+
+/*header*/
+#header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    color: aliceblue;
+    font-size: 3vw;
+    font-weight: 700;
+    height: 10vh;
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    padding: 0 5vw;
+    background-color: black;
+}
+
+header button {
+    color: white;
+    width: 15vw;
+    height: 10vh;
+    font-size: 1.2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: black;
+    transition: 0.5s all;
+    cursor: pointer; 
+    
+}
+
+header button:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+/*statement*/
+#statement {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-top: 4vh;
+}
+
+#statement img {
+    width: 15vw;
+    height: auto;
+}
+
+#statement p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: white;
+    padding: 1vw;
+    border: 2px solid;
+    width: 70vw;
+}
+
+/*form*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vh;
+    gap: 5vh;
+}
+
+#inputs {
+    gap: 20vw;
+}
+
+#inputs div {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    margin-bottom: 5vh;
+    justify-content: center;
+}
+
+#inputs input {
+    border: 2px solid;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.input-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.input-date label {
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+#inputs input::placeholder {
+    text-align: center;
+}
+
+#inputs select {
+    border: 2px solid;
+    width: 15vw;
+    height: 7.5vh;
+    text-align: center;
+}
+
+form button {
+    border: 2px solid;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 30px;
+    font-size: 1.5vw;
+    background-color: transparent;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: black;
+    color: #efdd3e;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comparing Texts</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--style-->
+    <link rel="stylesheet" href="./style/strings.css">
+</head>
+<body>
+
+    <!--header-->
+    <header id="header">
+        <section id="logo">Statistics Games</section>
+        <a href="../index/index.html">
+            <button>Voltar</button>
+        </a>
+    </header>
+    
+    <!--main-->
+    <main id="main">
+
+        <!--statement-->
+        <article id="statement">
+            <img src="./assets/images/escritor.png" alt="imagem de um escritor">
+            <p id="statement-text">Olá! digite abaixo quaisquer dois textos que nós iremos comparar seus tamanhos para você!</p>
+        </article>
+
+        <!--form-->
+        <form action="">
+
+            <div id="inputs">
+                <div>
+                    <label for="first-string">Primeiro Texto:</label>
+                    <input class="barra" type="text" name="first-string" id="first-string" placeholder="Escreva aqui..." required>
+                </div>
+                <div>
+                    <label for="second-string">Segundo Texto:</label>
+                    <input class="barra" type="text" name="second-string" id="second-string" placeholder="Escreva aqui..." required>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-button">Comparar</button>
+        </form>
+    </main>
+
+    <!--script-->
+    <script defer src="./script/strings.js"></script>    
+</body>
+</html>

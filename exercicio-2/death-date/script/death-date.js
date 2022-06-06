@@ -3,7 +3,6 @@ const genre = document.querySelector('#genre');
 let genValue;
 genre.addEventListener('change', function valueChange () {
     genValue = genre.options[genre.selectedIndex].value;
-    console.log(genValue);
 })
 
 //submit button
@@ -14,11 +13,11 @@ btnSubmit.addEventListener('click', function (e) {
 
     //birth date
     //birth day
-    const dayValue = document.querySelector('#day').value;
+    const dayValue = Number(document.querySelector('#day').value);
     //birth month
-    const monthValue = document.querySelector('#month').value;
+    const monthValue = Number(document.querySelector('#month').value);
     //birth year
-    const yearValue = document.querySelector('#year').value;
+    const yearValue = Number(document.querySelector('#year').value);
 
     //average life
     let averageLife;

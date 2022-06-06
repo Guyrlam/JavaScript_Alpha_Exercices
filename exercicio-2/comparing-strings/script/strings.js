@@ -6,10 +6,10 @@ submitBtn.addEventListener('click', function(e) {
 
     //strings value
     const txt1 = document.querySelector('#first-string');
-    let value1 = String(txt1.value);
+    let value1 = txt1.value;
     let length1 = value1.length;
     const txt2 = document.querySelector('#second-string');
-    let value2 = String(txt2.value);
+    let value2 = txt2.value;
     let length2 = value2.length;
 
     //statemente

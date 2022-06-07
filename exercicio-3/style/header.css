@@ -1,0 +1,51 @@
+/*header*/
+#header {
+    display: flex;
+    width: 90vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bebebec7;
+    margin: 0 5vw;
+    padding: 3vw 1vw;
+}
+
+/*logo*/
+#logo {
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow: 2px 2px 4px #464646;
+    font-size: 2.5vw;
+}
+
+/*side itens*/
+#side-itens {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+/*sandwich-menu*/
+#side-itens i {
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+/*button*/
+#side-itens button {
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    width: 15vw;
+    height: 6vh;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+#side-itens button:hover {
+    border: 2px solid white;
+    color: #bebebec7;
+}
+

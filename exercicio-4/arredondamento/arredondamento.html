@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon" />
+        <title>Smart Calculator</title>
+    
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    
+        <!--style-->
+        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/main.css" />
+    </head>
+    <body>
+
+        <!--header-->
+        <header id="header">
+
+            <figure id="logo">
+                <img src="./assets/images/logo.svg" alt="logo da página" />
+                <figcaption>Smart calculator</figcaption>
+            </figure>
+
+            <nav id="navbar">
+                <ul>
+                    <li class="nav-item"><a href="../index/index.html">Home</a></li>
+                    <li class="nav-item"><a href="../imc/imc.html">IMC</a></li>
+                    <li class="nav-item"><a href="../sorteio-numerico/sorteio-numerico.html">Sorteio numérico</a></li>
+                    <li class="nav-item"><a id="fourth" href="../arredondamento/arredondamento.html">Arredondamento</a></li>
+                    <li class="nav-item"><a href="../sorteio-perfil/sorteio-perfil.html">Sorteio de perfil</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--main-->
+        <main id="main">
+
+            <!--presentation-->
+            <section id="text-main">
+                <h1>Arredondamento</h1>
+                <p>Arredondamento é o nome dado à dispensa de casas decimais. Esse procedimento pode transformar qualquer valor para um inteiro e, geralmente, é feito quando as casas dispensadas não possuem grande relevância no resultado. Utilize o campo ao lado para determinar um valor arredondado imediatamente maior e menor ao preenchido. </p>
+            </section>
+
+            <!--calculator-->
+            <section id="calculator">
+
+                <h1>Arrendondar Valor</h1>
+
+                <form action="" >
+                    
+                    <!--inputs-->
+                    <label for="value1">Valor pautado</label>
+                    <input type="text" name="value1" id="value1" placeholder="exemplo: 37.17" required />
+
+                    <!--submit button-->
+                    <button id="submit-button" type="submit">Arredondar</button>
+                </form>
+
+                <!--result-->
+                <p id="result"> Preencha os valores acima.</p>
+
+            </section>
+
+        </main>
+
+        <!--script-->
+        <script src="./script/arredondamento.js"></script>
+    </body>
+</html>

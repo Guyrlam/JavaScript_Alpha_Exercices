@@ -1,0 +1,54 @@
+/*header*/
+#header {
+    display: flex;
+    width: 90vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bebebec7;
+    margin: 0 5vw;
+    padding: 3vw 3.5vw 3vw 1vw;
+}
+
+/*logo*/
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#logo img {
+    height: auto;
+    width: 3vw;
+}
+
+#logo figcaption {
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow: 2px 2px 4px #464646;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+/*navbar*/
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+#fifth {
+    color: #05c36c;
+}
+
+a {
+    cursor: pointer;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #05c36c;
+}

@@ -14,8 +14,8 @@ document.querySelector('#submit-button').addEventListener('click', function (e) 
     e.preventDefault()
 
     //values
-    const value1 = parseFloat(document.querySelector('#value1').value);
-    const value2 = parseFloat(document.querySelector('#value2').value);
+    const value1 = parseFloat(document.querySelector('#value1').value, 10);
+    const value2 = parseFloat(document.querySelector('#value2').value, 10);
 
     //result
     const result = document.querySelector('#result')

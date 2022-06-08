@@ -1,0 +1,89 @@
+/*main*/
+#main {
+    display: flex;
+    gap: 10.5vw;
+    align-items: center;
+    padding: 15vh 5vw 0;
+    flex-wrap: wrap;
+}
+
+/*presentation*/
+#text-main {
+    width: 38vw;
+}
+
+#text-main h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+}
+
+#text-main p {
+    padding-top: 5vh;
+    font-size: 1.2vw;
+    line-height: 6vh;
+}
+
+/*calculator*/
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0,0,0,0.25);
+    backdrop-filter: blur(2px);
+    padding: 5vh 10vw;
+}
+
+#calculator h1 {
+    font-weight: 400;
+    font-size: 2.5vw;
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 1vh;
+}
+
+/*form*/
+#calculator form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#calculator label {
+    font-size: 1vw;
+    margin: 3vh 0 1vh;
+}
+
+#calculator input {
+    width: 15vw;
+    height: 6vh;
+    border: none;
+    text-align: center;
+}
+
+/*submit-button*/
+#calculator button{
+    margin: 7vh 0;
+    width: 15vw;
+    height: 6vh;
+    border: 2px solid #05c36c;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+#calculator button:hover {
+    background-color: #05c36c;
+}
+
+/*result*/
+#calculator p {
+    font-size: 1vw;
+    text-align: center;
+    line-height: 5vh;
+    width: 20vw;
+}

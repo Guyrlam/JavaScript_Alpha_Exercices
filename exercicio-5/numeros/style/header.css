@@ -1,0 +1,54 @@
+/*header*/
+#header {
+    display: flex;
+    width: 90vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(180,89,20);
+    margin: 0 5vw;
+    padding: 3vw 1vw 3.5vw 1vw;
+}
+
+/*logo*/
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#logo img {
+    height: auto;
+    width: 3.5vw;
+}
+
+#logo h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+
+#logo span {
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+/*navbar*/
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#selected, a:hover {
+    color: rgb(180,89,20);
+}
+
+a {
+    cursor: pointer;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: rgb(29,105,140);
+}

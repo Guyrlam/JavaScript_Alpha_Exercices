@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*fonte*/
+@font-face {
+    font-family: 'clock';
+    src: url(../assets/fonts/DS-DIGII.TTF);
+}
+
+/*body*/
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*main*/
+main {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+}

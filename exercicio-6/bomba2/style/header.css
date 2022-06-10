@@ -1,0 +1,16 @@
+/*header*/
+#header {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007abc;
+    padding-left: 10vw;
+}
+
+/*logo*/
+#logo img {
+    width: 15vw;
+    height: auto;
+}

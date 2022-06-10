@@ -1,0 +1,79 @@
+/*aplication container*/
+#aplication-container {
+    height: 84vh;
+    width: 90vw;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*aplication*/
+#aplication {
+    height: 74vh;
+    width: 80vw;
+    background-color: rgb(247,252,255);
+    border: 0.1px solid rgba(85, 85, 85, 0.266);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#inputs {
+    display: flex;
+    gap: 1vw;
+}
+
+#timer {
+    display: none;
+    gap: 1vw;
+}
+
+#inputs select, #timer span {
+    font-family: 'clock' , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #071D41;
+    border: 3px solid #071D41;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 5px;
+    font-size: 1.8vw;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+}
+
+#aplication h1 {
+    font-size: 5vw;
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.355);
+    color: #071D41;
+}
+
+#aplication p{
+    font-size: 1.2vw;
+    line-height: 5vh;
+    text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.355);
+}
+
+#aplication button {
+    color: #071D41;
+    border: 3px solid #071D41;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 30px;
+    font-size: 1.2vw;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#aplication button:hover {
+    background-color: #071D41;
+    color: #ffffff;
+    transition: 0.5s all;
+}

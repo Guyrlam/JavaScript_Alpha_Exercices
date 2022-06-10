@@ -1,0 +1,105 @@
+/*aplication container*/
+#aplication-container {
+    height: 84vh;
+    width: 90vw;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*aplication*/
+#aplication {
+    height: 74vh;
+    width: 80vw;
+    background-color: rgb(247,252,255);
+    border: 0.1px solid rgba(85, 85, 85, 0.266);
+}
+
+#start {
+    height: 74vh;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+    text-align: center;
+}
+
+#start h1 {
+    font-size: 5vw;
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.355);
+    color: #071D41;
+    padding-bottom: 6vh;
+}
+
+#game h1 {
+    font-size: 4vw;
+    color: #071D41;
+    padding-bottom: 4vh;
+}
+
+#start p{
+    font-size: 1.2vw;
+    line-height: 5vh;
+    padding-bottom: 16vh;
+    text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.355);
+}
+
+#start button, #game button {
+    color: #071D41;
+    border: 3px solid #071D41;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 30px;
+    font-size: 1.2vw;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#start button:hover, #game button:hover{
+    background-color: #071D41;
+    color: #ffffff;
+    transition: 0.5s all;
+}
+
+#game {
+    height: 74vh;
+    width: 80vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh 10vw 0;
+    text-align: center; 
+}
+
+#game img {
+    cursor: pointer;
+    height: auto;
+    width: 13vw;
+}
+
+#start {
+    display: flex;
+}
+
+#game button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+#stopwatch {
+    padding-top: 2vh;
+    font-family: 'clock', sans-serif;
+    color: #071D41;
+    width: 15vw;
+    height: 8vh;
+    font-size: 2vw;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

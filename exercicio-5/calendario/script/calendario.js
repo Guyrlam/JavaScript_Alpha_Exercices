@@ -4,9 +4,34 @@ document.querySelector('#submit-button').addEventListener('click', function(e) {
 
     //value
     const value1 = new Date(document.querySelector('#value1').value);
-    const conditioner = Number(document.querySelector('#value1').value);
 
     //date details
+    //week
+    let week;
+    switch(value1.getUTCDay()){
+        case 0:
+            week = 'Domingo';
+            break;
+        case 1:
+            week = 'Segunda-feira';
+            break;
+        case 2:
+            week = 'Terça-feira';
+            break;
+        case 3:
+            week = 'Quarta-feira';
+            break;
+        case 4:
+            week = 'Quinta-feira';
+            break;
+        case 5:
+            week = 'Sexta-feira';
+            break;
+        case 6:
+            week = 'Sábado';
+            break;
+    }
+
     //day
     const day = value1.getUTCDate();
     
@@ -58,14 +83,14 @@ document.querySelector('#submit-button').addEventListener('click', function(e) {
     const timestamp = value1.getTime();
 
     //event result
-    switch(isNaN(conditioner)) {
-        case false:
+    switch(isNaN(day) || isNaN(numberMonth) || isNaN(year)) {
+        case true:
             window.alert('Certifique-se de que o campo de data abaixo está preenchido');
             break;
         default:
             document.querySelector('#result').innerHTML = (
                 `<strong>Data:</strong> <br />
-                ${day} de ${month}(${numberMonth}) de ${year}. <br />
+                ${week}, ${day} de ${month}(${numberMonth}) de ${year}. <br />
                 <strong>Data em milissegundos:</strong> <br />
                 ${timestamp}`
             );

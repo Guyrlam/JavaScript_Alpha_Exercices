@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TIME|CENTER</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!--style-->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/aside.css">
+    <link rel="stylesheet" href="./style/aplication.css">
+
+</head>
+<body>
+
+    <!--Header-->
+    <header id="header">
+        <figure id="logo">
+            <img src="./assets/images/logo.svg" alt="logo">
+        </figure>
+    </header>
+
+    <!--main-->
+    <main id="main">
+
+        <!--aside-->
+        <aside>
+            <nav id="navbar">
+                <ul>
+                    <li class="nav-item"> 
+                        <a href="../bomba1/bomba1.html">
+                            <i class="fa-solid fa-bomb"></i>
+                            <span>Bomba Nível 1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../bomba2/bomba2.html">
+                            <i class="fa-solid fa-explosion"></i>
+                            <span>Bomba Nível 2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="last-item">
+                        <a href="../ctg-regressiva/contagem.html" id="selected">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <span>Contagem Regressiva</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <!--aplication-->
+        <div id="aplication-container">
+            <section id="aplication">
+                <h1>Contagem Regressiva</h1>
+                <p>Utilize os campos abaixo para definir um valor para a contagem regressiva:</p>
+                <div id="inputs">
+                        <select name="minutes" id="minutes">
+                            <option value="0">Minutos</option>
+                        </select>
+                        <select name="seconds" id="seconds">
+                            <option value="0">Segundos</option>
+                        </select>
+                </div>
+                <div id="timer">
+                     <span id="minutes-clock">00</span>
+                     <span id="seconds-clock">00</span>
+                </div>
+                <button id= "start">INICIAR</button>
+                <audio id="alarm" src="./assets/audio/alarm.mp3"></audio>
+                <audio id="tic-sound" src="./assets/audio/tictac.wav"></audio>
+            </section>
+        </div>
+
+    </main>
+    
+    <!--script-->
+    <script src="https://kit.fontawesome.com/088a0687c8.js" crossorigin="anonymous"></script>
+    <script src="./script/contagem.js"></script>
+</body>
+</html>

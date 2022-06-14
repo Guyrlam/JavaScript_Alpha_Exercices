@@ -1,0 +1,49 @@
+/*header*/
+header {
+    width: 92vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4vw;
+    padding: 2vh 3vw 2vh 1vw; 
+    border-bottom: 1px solid white;
+}
+
+/*logo*/
+#logo {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#logo h1 {
+    font-size: 1.8vw;
+    font-weight: 700;
+    letter-spacing: 0.05vw;
+}
+
+#logo svg {
+    fill: #ffffff;
+    height: auto;
+    width: 4.5vw;
+}
+
+/*navbar*/
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5vw;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#navbar a:hover {
+    transition: 0.5s all;
+    color: rgb(255,158,146);
+}

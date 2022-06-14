@@ -1,0 +1,47 @@
+/*main*/
+main {
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0 0 4vw;
+}
+
+/*main text*/
+main h1 {
+    font-size: 2vw;
+    font-weight: 300;
+    padding-bottom: 4vh;
+}
+
+main h2 {
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+main h3 {
+    font-size: 4vw;
+    font-weight: 700;
+    padding-bottom: 8vh;
+}
+/*button*/
+main button {
+    height: 8vh;
+    width: 12vw;
+    background-color: rgb(170,41,24);
+    border: none;
+    border: 2px solid rgb(170,41,24);
+    border-radius: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+main button:hover { 
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}

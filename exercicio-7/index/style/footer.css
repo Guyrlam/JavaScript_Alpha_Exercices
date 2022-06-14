@@ -1,0 +1,31 @@
+/*footer*/
+#footer {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding: 18vh 0 0 3.8vw;
+}
+
+.footer-container {
+    display: flex;
+    gap: 1vw;
+}
+
+.footer-container figure {
+    padding-right: 1vw;
+    border-right: 2px solid rgb(170,41,24);
+}
+
+.footer-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 1.2vw;
+}
+
+#footer svg {
+    fill: white;
+    height: auto;
+    width: 3vw;
+}

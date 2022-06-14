@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--style-->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+<body>
+    
+    <!--header-->
+    <header id="header">
+        <div id="logo">
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="10 55 180 90" viewBox="10 55 180 90" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img" aria-labelledby="svgcid-b1ph748ed0qs"><title id="svgcid-b1ph748ed0qs">Homepage</title>
+                <g>
+                    <path d="M55 122.5c0 12.426-10.074 22.5-22.5 22.5S10 134.926 10 122.5 20.074 100 32.5 100 55 110.074 55 122.5z"></path>
+                    <path d="M167.5 100c-21.039 0-22.501-17.017-22.525-21.453.016-.347.025-.696.025-1.047 0-12.426-10.074-22.5-22.5-22.5h-45C65.074 55 55 65.074 55 77.5S65.074 100 77.5 100h45c20.596 0 22.58 14.832 22.597 20.411A22.889 22.889 0 0 0 145 122.5c0 12.426 10.074 22.5 22.5 22.5s22.5-10.074 22.5-22.5-10.074-22.5-22.5-22.5z"></path>
+                </g>
+            </svg>
+            <h1>autopile</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li class="nav-item"><a href="../index/index.html">Home</a></li>
+                <li class="nav-item"><a href="../modelos/modelos.html">Modelos</a></li>
+                <li class="nav-item"><a href="../test-drive/test-drive.html">Test Drive</a></li>
+                <li class="nav-item"><a href="../contato/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main id="main">
+
+        <!--banner-->
+        <div id="banner">
+            <h1>Agende um teste drive com um de nossos modelos na unidade mais próxima de você</h1>
+            <span>Faça um test drive com um de nossos modelos premium e se encante com a experiência. Agora essa também está disponível no formato 3D por meio de equipamentos com acesso ao  Metaverso!</span>
+        </div>
+
+        <!--form-->
+        <section id="form-content">
+
+            <!--title-->
+            <h1>Agende sua experiência</h1>
+
+            <form action="">
+
+                <!--Name-->
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" class="bar" id="name" placeholder="Exemplo: Geraldo Marcelo Junior" required>
+                </div>
+
+                <!--CPF-->
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="bar" id="cpf" placeholder="Exemplo: 000.000.000-00" required>
+                    <span id="alert">Certifique-se de preencher esse campo soente com números!</span>
+                </div>
+
+                <!--Telefone-->
+                <div>
+                    <label for="tel">Telefone</label>
+                    <div id="tel-details">
+                        <select class="bar" id="tel-cod" required>
+                            <option value="brazil">
+                                <span>+55</span>
+                            </option>
+                        </select>
+                        <input type="text" class="bar" id="tel" placeholder="Exemplo: (31) 90000-0000" required>
+                    </div>
+                </div>
+            
+                <!--select model-->
+                <select id="models" class="bar" required>
+                    <option value="first" selected disabled>Selecione um Modelo</option>
+                    <option value="1">Maserati Ghibli</option>
+                    <option value="2">Maserati MC20</option>
+                    <option value="3">Maserati Quattroporte</option>
+                    <option value="4">McLaren 540C</option>
+                    <option value="5">McLaren Senna</option>
+                    <option value="6">Mercedes-Benz CLA</option>
+                    <option value="7">Jaguar F-Type</option>
+                    <option value="8">Lamborghini Huracan STO</option>
+                    <option value="9">Lamborghini Urus Graphite Capsule</option>
+                    <option value="10">Audi RS E-tron GT</option>
+                </select>
+
+                <!--select unit-->
+                <select id="units" class="bar" required>
+                    <option value="first" selected disabled>Selecione uma Unidade</option>
+                    <option value="1">Minas Gerais</option>
+                    <option value="2">São Paulo</option>
+                    <option value="3">Rio de Janeiro</option>
+                    <option value="4">Metaverso</option>
+                </select>
+            </form>
+
+            <!--schedule-->
+            <button>Agende agora!</button>
+        </section>
+    </main>
+
+    <!--script-->
+    <script src="./script/modelos.js"></script>
+</body>
+</html>

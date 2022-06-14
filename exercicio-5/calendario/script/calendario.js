@@ -36,7 +36,7 @@ document.querySelector('#submit-button').addEventListener('click', function(e) {
     const day = value1.getUTCDate();
     
     //month
-    const numberMonth = value1.getUTCMonth() + 1;
+    const numberMonth = value1.getUTCMonth();
     let month;
     switch (numberMonth)  {
         case 0:
@@ -90,7 +90,7 @@ document.querySelector('#submit-button').addEventListener('click', function(e) {
         default:
             document.querySelector('#result').innerHTML = (
                 `<strong>Data:</strong> <br />
-                ${week}, ${day} de ${month}(${numberMonth}) de ${year}. <br />
+                ${week}, ${day} de ${month}(${numberMonth  + 1}) de ${year}. <br />
                 <strong>Data em milissegundos:</strong> <br />
                 ${timestamp}`
             );

@@ -1,0 +1,134 @@
+/*main*/
+#main {
+    padding: 7vh 4vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/*banner*/
+#banner {
+    width: 55vw;
+    height: 35vw;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-image: url(../assets/images/testdrive-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    padding: 0 4vw;
+    position:relative;
+    z-index: -2;
+}
+
+#banner h1 {
+    font-size: 4vw;
+}
+
+#banner span {
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 6vh;
+}
+
+/*form*/
+#form-content {
+    width: 30vw;
+    height: 34.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*profile*/
+#profile {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#profile figure {
+    height: 4vw;
+    width: 4vw;
+    background-color: rgba(255, 255, 255, 0.763);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#profile img {
+    height: auto;
+    width: 3vw;
+}
+
+#profile div {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile span {
+    font-size: 1vw;
+    color: #8cbf7b;
+}
+
+#clean {
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: black;
+    cursor: pointer;
+    margin-left: 7vw;
+}
+
+/*textarea*/
+textarea {
+    margin-top: 2vh;
+    resize: none;
+    width: 30vw;
+    height: 53vh;
+    background-color: rgba(0, 0, 0);
+    border: 1px solid white;
+}
+
+/*send*/
+#send {
+    display: flex;
+    width: 30vw;
+    height: 7vh;
+    justify-content: space-between;
+    padding: 0 1vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0);
+    border: 1px solid white;
+}
+
+#message {
+    width: 25.5vw;
+    height: 4.5vh;
+    border-radius: 5px;
+    border: none;
+}
+
+#button {
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: rgba(10, 40, 40);
+    cursor: pointer;
+}

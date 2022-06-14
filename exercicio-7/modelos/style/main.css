@@ -1,0 +1,97 @@
+/*main*/
+#main {
+    padding: 7vh 4vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/*showcase*/
+#showcase {
+    width: 55vw;
+    height: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed white;
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*select and data*/
+#data-models {
+    height: 34.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#models {
+    width: 30vw;
+    height: 8vh;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 1.3vw;
+    padding: 0 1vw;
+    cursor: pointer;
+}
+
+#models option {
+    color: black;
+}
+
+/*details*/
+#details {
+    display: none;
+    flex-direction: column;
+    gap: 3.5vh;
+    font-weight: 400;
+}
+
+#details h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5vh;
+}
+
+#details div {
+    width: 29vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.6vw;
+}
+
+.legend {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.523);
+}
+
+/*details button*/
+#data-models button {
+    display: none;
+    height: 8vh;
+    width: 20vw;
+    background-color: #3F8527;
+    border: none;
+    border: 2px solid #3F8527;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color:aliceblue;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.623));
+    justify-content: center;
+    align-items: center;
+}
+
+#data-models button:hover { 
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    color: white;
+    cursor: pointer;
+}

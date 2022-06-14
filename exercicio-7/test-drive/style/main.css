@@ -47,8 +47,10 @@
 }
 
 #form-content h1 {
+    font-size: 1.8vw;
     padding-bottom: 4vh;
 }
+
 
 form label {
     font-size: 1vw;
@@ -80,12 +82,12 @@ form label {
 }
 
 #tel-cod {
-    width: 4vw;
+    width: 5vw;
     padding: 0;
 }
 
 #tel{
-    width: 25vw;
+    width: 24vw;
 }
 
 #cpf {

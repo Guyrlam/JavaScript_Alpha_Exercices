@@ -23,7 +23,7 @@ function modelSelect () {
 
     switch (Number(model.value)) {
         case 1: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/maserati-ghibli.webp)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/maserati-ghibli.webp)';
             document.querySelector('#mark').textContent = 'Maserati';
             document.querySelector('#year').textContent = '2021';
             document.querySelector('#engine').textContent = 'V 6';
@@ -32,7 +32,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (535370.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 2: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/maserati-MC20.jpg)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/maserati-MC20.jpg)';
             document.querySelector('#mark').textContent = 'Maserati';
             document.querySelector('#year').textContent = '2021';
             document.querySelector('#engine').textContent = 'V 6';
@@ -41,7 +41,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (2426813.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 3: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/maserati-quattroporte.webp)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/maserati-quattroporte.webp)';
             document.querySelector('#mark').textContent = 'Maserati';
             document.querySelector('#year').textContent = '2019';
             document.querySelector('#engine').textContent = 'V 8 biturbo';
@@ -50,7 +50,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (1601349.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 4: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/mclaren-540c.webp)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/mclaren-540c.webp)';
             document.querySelector('#mark').textContent = 'McLaren';
             document.querySelector('#year').textContent = '2016';
             document.querySelector('#engine').textContent = 'V 8';
@@ -59,7 +59,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (2244871.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 5: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/mclaren-senna.webp)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/mclaren-senna.webp)';
             document.querySelector('#mark').textContent = 'McLaren';
             document.querySelector('#year').textContent = '2020';
             document.querySelector('#engine').textContent = 'V 8';
@@ -68,7 +68,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (9368625.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 6: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/mercedes-benz-CLA.webp)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/mercedes-benz-CLA.webp)';
             document.querySelector('#mark').textContent = 'Mercedes-Benz';
             document.querySelector('#year').textContent = '2022';
             document.querySelector('#engine').textContent = 'Em linha 4';
@@ -77,7 +77,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (332900.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 7: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/jaguar-f-type.jpg)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/jaguar-f-type.jpg)';
             document.querySelector('#mark').textContent = 'Jaguar';
             document.querySelector('#year').textContent = '2020';
             document.querySelector('#engine').textContent = 'V 8';
@@ -86,7 +86,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (523744.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 8: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/lamborghini-huracan-sto.webp)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/lamborghini-huracan-sto.webp)';
             document.querySelector('#mark').textContent = 'Lamborghini';
             document.querySelector('#year').textContent = '2021';
             document.querySelector('#engine').textContent = 'V 10';
@@ -95,7 +95,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (6500000.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 9: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/lamborghini-urus-graphite-capsule.jpg)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/lamborghini-urus-graphite-capsule.jpg)';
             document.querySelector('#mark').textContent = 'Lamborghini';
             document.querySelector('#year').textContent = '2022';
             document.querySelector('#engine').textContent = 'V 8';
@@ -104,7 +104,7 @@ function modelSelect () {
             document.querySelector('#price').textContent = (3650100.00).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
         break;
         case 10: 
-            document.querySelector('#showcase').style.backgroundImage = 'url(../assets/images/audi-RS-e-tron-GT.webp)';
+            document.querySelector('#showcase').style.backgroundImage = 'url(./assets/images/audi-RS-e-tron-GT.webp)';
             document.querySelector('#mark').textContent = 'Audi';
             document.querySelector('#year').textContent = '2022';
             document.querySelector('#engine').textContent = 'Elétrico';

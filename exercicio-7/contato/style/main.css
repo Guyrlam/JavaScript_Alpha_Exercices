@@ -69,6 +69,10 @@
     width: 3vw;
 }
 
+#profile h1 {
+    font-size: 1.8vw;
+}
+
 #profile div {
     display: flex;
     flex-direction: column;
@@ -100,6 +104,29 @@ textarea {
     height: 53vh;
     background-color: rgba(0, 0, 0);
     border: 1px solid white;
+    color: white;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.2vw;
+    font-family: 'Roboto', sans-serif;
+    line-height: 4vh;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.5vw;               
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid white;    
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: white;    
+  border-radius: 0.6vw;
+  border-radius: 5px;      
 }
 
 /*send*/
@@ -132,3 +159,4 @@ textarea {
     background-color: rgba(10, 40, 40);
     cursor: pointer;
 }
+

@@ -1,0 +1,33 @@
+/*main*/
+#main {
+    height: 76vh;
+    display: flex;
+    margin: 5vh 5vw;
+    padding: 12vh 5vw 0;
+    background-image: url(../assets/images/background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.272);
+    background-blend-mode: color;
+}
+
+/*presentation*/
+#text-main {
+    width: 38vw;
+    color: white;
+}
+
+#text-main h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    text-shadow: 1px 1px 2px black;
+}
+
+#text-main p {
+    padding-top: 5vh;
+    font-size: 1.5vw;
+    line-height: 6vh;
+    text-shadow: 1px 1px 2px black;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+        <title>Simple Math</title>
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+        <!--style-->
+        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/main.css" />
+    </head>
+    <body>
+
+        <!--header-->
+        <header id="header">
+
+            <figure id="logo">
+                <img src="./assets/images/logo.svg" alt="logo da página" />
+                <figcaption>
+                    <h1>Simple Math</h1>
+                    <span>Tutoring Services</span>
+                </figcaption>
+            </figure>
+
+            <nav id="navbar">
+                <ul>
+                    <li class="nav-item"><a href="../index/index.html">Home</a></li>
+                    <li class="nav-item"><a  href="../objetos/objetos.html">Manipulando Objetos</a></li>
+                    <li class="nav-item"><a id="selected" href="../cadastro/cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--main-->
+        <main id="main">
+
+            <!--presentation-->
+            <section id="text-main">
+                <h1>Cadastre-se no campo ao lado e comece a fazer parte da nossa comunidade!</h1>
+                <p>Cadastrando-se, você terá acesso à diversas aulas relacionadas aos diversos campos da matemática.</p>
+            </section>
+
+            <!--cadastre-->
+            <section id="cadastre">
+
+                <h1>Cadastro</h1>
+
+                <form action="" >
+
+                    <!--name-->
+                    <div class="container"  id="name-container">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite o nome do usuário" required>
+                    </div>
+
+                    <!--birthday-->
+                    <div id="birthday-container">
+                        <div class="input-date">
+                            <label for="day">Dia</label>
+                            <input class="barra" type="text" id="day" placeholder="exemplo: 25" required>
+                        </div>
+                        <div class="input-date">
+                            <label for="month">Mês</label>
+                            <input class="barra" type="text" id="month" placeholder="exemplo: 12" required>
+                        </div>
+                        <div class="input-date">
+                            <label for="year">Ano</label>
+                            <input class="barra" type="text" id="year" placeholder="exemplo: 2001" required> 
+                        </div> 
+                    </div>
+                    <div class="container"  id="weight-container">
+                        <label for="weight">Peso(kg)</label>
+                        <input class="barra" type="text" id="weight" placeholder="exemplo: 80.700" required> 
+                    </div>
+                    <div class="container"  id="height-container">
+                        <label for="height">Altura(cm)</label>
+                        <input class="barra" type="text" id="height" placeholder="exemplo: 180" required> 
+                    </div>
+                    <div class="container" id="genre-container">
+                        <select id="genre" required>
+                            <option value="initial" selected>Selecione um gênero</option>
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
+                        </select>
+                    </div>
+
+                    <!--submit button-->
+                    <button id="button" type="button">Cadastrar</button>
+                </form>
+            </section>
+
+        </main>
+
+        <!--script-->
+        <script src="./script/cadastro.js"></script>
+    </body>
+</html>

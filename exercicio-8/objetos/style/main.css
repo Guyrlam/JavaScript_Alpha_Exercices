@@ -1,0 +1,105 @@
+/*main*/
+#main {
+    display: flex;
+    gap: 10.5vw;
+    align-items: center;
+    padding: 5vh 5vw 0;
+    flex-wrap: wrap;
+}
+
+/*presentation*/
+#text-main {
+    width: 50vw;
+    height: 76vh;
+    background-image: url(../assets/images/text-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.272);
+    background-blend-mode: color;
+    color: white;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text-main h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    text-shadow: 1px 1px 2px black;
+}
+
+#text-main p {
+    padding-top: 5vh;
+    font-size: 1.5vw;
+    line-height: 6vh;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*calculator*/
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 76vh;
+}
+
+#calculator h1 {
+    font-weight: 500;
+    font-size: 2.5vw;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 1vh;
+}
+
+/*form*/
+#calculator form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#calculator label {
+    font-size: 1.3vw;
+    margin: 3vh 0 3vh;
+}
+
+#calculator input {
+    width: 25vw;
+    height: 7vh;
+    border: none;
+    border-bottom: 3px solid rgb(29,105,140);
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+/*submit-button*/
+#calculator button{
+    margin: 7vh 0 5vh;
+    width: 25vw;
+    height: 8vh;
+    border: 2px solid rgb(180,89,20);
+    background-color: rgb(180,89,20);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: 0.4s all;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#calculator button:hover {
+    background-color: white;
+    color: rgb(180,89,20);
+}
+
+/*result*/
+#calculator p {
+    font-size: 1.3vw;
+    text-align: center;
+    line-height: 5vh;
+    width: 20vw;
+}

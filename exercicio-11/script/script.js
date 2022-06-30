@@ -90,6 +90,7 @@ function addVerification() {
         document.querySelector('#feedback').innerHTML = 'O produto foi adicionado à lista com sucesso!';
         add(); 
     } catch (error) {
+        console.log(error)
         document.querySelector('#feedback').style.color = '#e32636';
         verification.style.borderColor = '#e32636';
         document.querySelector('#feedback').innerHTML = error.message;
@@ -139,16 +140,13 @@ function listView() {
 //list creator
 function list(array) {
     //variables
-    let i =0;
-    let object;
 
     //cleaning the table
     tbody.innerHTML = '';
 
     //adding the products to the table
     
-    array.forEach(() => {
-        object = array[i];
+    array.forEach((object) => {
 
         //ELEMENTS CREATION
         //line creation
@@ -169,7 +167,7 @@ function list(array) {
         nameCell.appendChild(nameContent);
         //name cell id
         const locale = document.createAttribute('id');
-        locale.value = `${i}`;
+        locale.value = `${object.id}`;
         nameCell.setAttributeNode(locale);
 
         //price cell creation
@@ -179,7 +177,7 @@ function list(array) {
         priceCell.appendChild(priceContent);
         //price cell class
         const priceClass = document.createAttribute('class');
-        priceClass.value = `price-cell p${i}`;
+        priceClass.value = `price-cell p${object.id}`;
         priceCell.setAttributeNode(priceClass);
 
         //edit cell creation
@@ -194,7 +192,7 @@ function list(array) {
         editCell.appendChild(editImg);
         //edit cell id
         const edition = document.createAttribute('id');
-        edition.value = `${i}`;
+        edition.value = `${object.id}`;
         editCell.setAttributeNode(edition);
 
         //delete cell
@@ -209,7 +207,7 @@ function list(array) {
         deleteCell.appendChild(deleteImg);
         //delete cell id
         const line = document.createAttribute('id');
-        line.value = `${i}`;
+        line.value = `${object.id}`;
         deleteCell.setAttributeNode(line);
 
         //align elements
@@ -221,7 +219,8 @@ function list(array) {
 
         
         //LINE FUNCTIONS
-        //details modal function
+        //details modal 
+         
         nameCell.onclick = function modal() {
             const object2 = products[locale.value];
             const date = new Date(object2.date);
@@ -310,8 +309,6 @@ function list(array) {
             products.splice(line.value, 1)
             list(products);
         };
-
-        i++;
  
     });
 
@@ -339,15 +336,13 @@ function sortPrice() {
 
 //search
 function searchFilter () {
-    if(products.value = ''){
-        list(products);
-    } else {const array = products.filter((obj) => {
-            if(obj.name.includes(searchBar.value) || obj.price === searchBar.value || obj.price === searchBar.value.replace(',','.')){
-                return true;
-            } else {
-                return false;
-            };
-        });
-        list(array)
-    }
+    const array = products.filter((obj) => {
+        if(obj.name.includes(searchBar.value) || obj.price === searchBar.value || obj.price === searchBar.value.replace(',','.')){
+            return true;
+        } else {
+            return false;
+        };
+    });
+    list(array)
+    
 }

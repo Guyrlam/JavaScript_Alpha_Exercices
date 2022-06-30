@@ -1,0 +1,134 @@
+/*main*/
+#main {
+    display: flex;
+    gap: 10.5vw;
+    align-items: center;
+    padding: 5vh 5vw 0;
+    flex-wrap: wrap;
+}
+
+/*presentation*/
+#text-main {
+    width: 50vw;
+    height: 76vh;
+    background-image: url(../assets/images/text-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+    color: white;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text-main h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    text-shadow: 1px 1px 2px black;
+}
+
+#text-main p {
+    padding-top: 5vh;
+    font-size: 1.5vw;
+    line-height: 6vh;
+    text-shadow: 1px 1px 2px black;
+}
+
+/*calculator*/
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 76vh;
+    width: 25vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#game-container h1 {
+    font-weight: 500;
+    font-size: 2.5vw;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 1vh;
+}
+
+#turn {
+    height: 3.5vh;
+}
+
+/*game*/
+
+.field {
+    width: 8vw;
+    height: 8vw;
+    cursor: pointer;
+    transition: 0.5s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.line {
+    display: flex;
+}
+
+[data-id = '4'] {
+    border: 2px solid rgb(180,89,20);
+}
+
+[data-id = '1'], [data-id = '7']  {
+    border-left: 2px solid rgb(180,89,20);
+    border-right: 2px solid rgb(180,89,20);
+}
+
+[data-id = '3'], [data-id = '5']   {
+    border-top: 2px solid rgb(180,89,20);
+    border-bottom: 2px solid rgb(180,89,20);
+}
+
+#o {
+    border: 8px solid rgb(29,105,140);
+    border-radius: 50vw;
+    width: 4vw;
+    height: 4vw;
+}
+
+#x::after {
+    color: rgb(29,105,140);
+    content: "\d7";
+    font-size: 8vw;
+}
+
+#reload{
+    margin: 7vh 0 5vh;
+    width: 25vw;
+    height: 8vh;
+    border: 2px solid rgb(180,89,20);
+    background-color: rgb(180,89,20);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: 0.4s all;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#reload:hover {
+    background-color: white;
+    color: rgb(180,89,20);
+}
+
+#reload {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}

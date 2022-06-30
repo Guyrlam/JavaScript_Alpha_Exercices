@@ -1,0 +1,79 @@
+/*main*/
+main {
+    width: 100vw;
+    height: 86.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*main-content*/
+#main-content {
+    width: 90vw;
+    height: 76.5vh;
+    border: 1px solid black;
+}
+
+#main-content button {
+    width: 18vw;
+    height: 7vh;
+    border: 1px solid black;
+    border-radius: 5vw;
+    cursor: pointer;
+    transition: 500ms all;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#main-content button:hover {
+    background-color: black;
+    color: white;
+}
+
+/*initial*/
+#initial, #game {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 300;
+    gap: 5vh;
+}
+
+#initial {
+    display: flex;
+}
+
+#initial p {
+    width: 60vw;
+    text-align: center;
+}
+
+#initial img {
+    width: 20vw;
+    height: auto;
+}
+
+/*game*/
+#game {
+    display: none;
+}
+
+#cards {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.card img{
+    width: 14vw;
+    height: 45vh;
+}
+
+#game p {
+    width: 60vw;
+    text-align: center;
+    border: 1px solid black;
+}

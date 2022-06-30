@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+        <title>Simple Math</title>
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+        <!--style-->
+        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/main.css" />
+    </head>
+    <body>
+
+        <!--header-->
+        <header id="header">
+
+            <figure id="logo">
+                <img src="./assets/images/logo.svg" alt="logo da página" />
+                <figcaption>
+                    <h1>Simple Math</h1>
+                    <span>Tutoring Services</span>
+                </figcaption>
+            </figure>
+
+            <nav id="navbar">
+                <ul>
+                    <li class="nav-item"><a id="selected" href="../numeros/números.html">Calculadora</a></li>
+                    <li class="nav-item"><a href="../calendario/calendario.html">Caledário detalhado</a></li>
+                    <li class="nav-item"><a href="../produtos/produtos.html">Produtos</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--main-->
+        <main id="main">
+
+            <!--presentation-->
+            <section id="text-main">
+                <h1>Aplicações matemáticas construídas para simplificar seu aprendizado</h1>
+                <p>Simplificamos a matemática, realize os cálculos em nossos programas especializados de acordo com a sua necessidade de forma rápida e fácil. Preencha os campos ao lado para calcular o fatorial e o número de euler do número desejado.</p>
+            </section>
+
+            <!--calculator-->
+            <section id="calculator">
+
+                <h1>Calculo Fatorial e da<br />Constante</h1>
+
+                <form method="post">
+                    
+                    <!--inputs-->
+                    <label for="value1">Valor desejado:</label>
+                    <input type="text" name="value1" id="value1" placeholder="exemplo: 8" required />
+
+                    <!--submit button-->
+                    <button id="submit-button" type="button">Confirmar</button>
+                </form>
+
+                <!--result-->
+                <p id="result"> Preencha o campo acima.</p>
+
+            </section>
+
+        </main>
+
+        <!--script-->
+        <script src="./script/calculo.js"></script>
+    </body>
+</html>

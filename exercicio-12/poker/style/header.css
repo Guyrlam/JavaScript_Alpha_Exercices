@@ -1,0 +1,9 @@
+header h1 {
+    font-family: 'poker', sans-serif;
+    font-size: 5vw;
+    letter-spacing: 0.1vw;
+    color: rgba(0, 0, 0, 0.731);
+    width: 100vw;
+    height: 13.5vh;
+    text-align: center;
+}

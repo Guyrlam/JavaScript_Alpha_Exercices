@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+        <title>Nostalgames</title>
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+        <!--style-->
+        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/main.css" />
+    </head>
+    <body>
+
+        <!--header-->
+        <header id="header">
+
+            <figure id="logo">
+                <img src="./assets/images/logo.svg" alt="logo da página" />
+                <figcaption>
+                    <h1>Nostalgames</h1>
+                    <span>Jogos da sua infância</span>
+                </figcaption>
+            </figure>
+        </header>
+
+        <!--main-->
+        <main id="main">
+
+            <!--presentation-->
+            <section id="text-main">
+                <h1>Jogue com seus amigos o clássico Jogo da Velha!</h1>
+                <p>O objetivo é conseguir três círculos ou três x em linha, quer horizontal, vertical ou diagonal , e ao mesmo tempo, quando possível, impedir o adversário de ganhar na próxima jogada.</p>
+            </section>
+
+            <!--calculator-->
+            <section id="game-container">
+
+                <h1>Jogo da Velha</h1>
+
+                <p id="turn">Vez do X</p>
+
+                <div id="game">
+                    <div id="line1" class="line">
+                        <div class="field"></div>
+                        <div class="field"></div>
+                        <div class="field"></div> 
+                    </div>
+                    <div id="line2" class="line">
+                        <div class="field"></div>
+                        <div class="field"></div>
+                        <div class="field"></div>
+                    </div>
+                    <div id="line3" class="line">
+                        <div class="field"></div>
+                        <div class="field"></div>
+                        <div class="field"></div>
+                    </div>
+                </div>
+
+                <button id="reload">Recomeçar</button>
+                    
+            </section>
+
+        </main>
+
+        <!--script-->
+        <script src="./script/produtos.js"></script>
+    </body>
+</html>

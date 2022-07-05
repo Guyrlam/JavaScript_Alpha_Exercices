@@ -22,38 +22,36 @@ field.forEach((el,index)=> {
 
     el.onclick = function mark() {
 
-        switch(index) {
-            case 0:
+        const unit = document.querySelector(`[data-id = '${index}']`);
+
+        switch(unit.dataset.id) {
+            case '0':
                 arr[0][0] = symbol;
                 break;
-            case 1:
+            case '1':
                 arr[0][1] = symbol;
                 break;
-            case 2:
+            case '2':
                 arr[0][2] = symbol;
                 break;
-            case 3:
+            case '3':
                 arr[1][0] = symbol;
                 break;
-            case 4:
+            case '4':
                 arr[1][1] = symbol;
                 break;
-            case 5:
+            case '5':
                 arr[1][2] = symbol;
                 break;
-            case 6:
+            case '6':
                 arr[2][0] = symbol;
                 break;
-            case 7:
+            case '7':
                 arr[2][1] = symbol;
                 break;
             default:
                 arr[2][2] = symbol;
         }
-
-        console.log(arr);
-
-        const el = document.querySelector(`[data-id = '${index}']`);
 
         if(symbol === 'x') {
             symbol = 'o'
@@ -94,9 +92,9 @@ field.forEach((el,index)=> {
         ) {
 
             if(symbol === 'x') {
-                turn.textContent = '𐤏 venceu!'
+                turn.textContent = 'Vencedor: 𐤏'
             } else {
-                turn.textContent = 'X venceu!'
+                turn.textContent = 'Vencedor: X'
             }
             turn.style.fontSize = '2vw'
             reload.style.display = 'flex'

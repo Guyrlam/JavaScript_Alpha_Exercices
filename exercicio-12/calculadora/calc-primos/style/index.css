@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'crayon';
+    src: url(../assets/fonts/crayon/Chalk\ Board.ttf)
+}
+
+/*body*/
+body {
+    width: 100vw;
+    height: 100vh;
+    color: rgb(29,105,140);
+    font-family: 'Work Sans', sans-serif;
+}

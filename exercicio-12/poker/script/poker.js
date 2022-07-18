@@ -304,14 +304,75 @@ function distribute() {
         return Math.floor(Math.random() * (1 + 1)) -1;
     })
 
-    //cards random disribute
-    card1.innerHTML = (`<img src="${cards[0].url}" alt="carta do ${cards[0].symbol} de ${cards[0].suit}">`)
-    card2.innerHTML = (`<img src="${cards[1].url}" alt="carta do ${cards[1].symbol} de ${cards[1].suit}">`)
-    card3.innerHTML = (`<img src="${cards[2].url}" alt="carta do ${cards[2].symbol} de ${cards[2].suit}">`)
-    card4.innerHTML = (`<img src="${cards[3].url}" alt="carta do ${cards[3].symbol} de ${cards[3].suit}">`)
-    card5.innerHTML = (`<img src="${cards[4].url}" alt="carta do ${cards[4].symbol} de ${cards[4].suit}">`)
+    //array removed cards
+    const removed = sort.splice(0,5)
 
+    //deck verification
+    if(sort.length < 5){
+        document.location.reload();
+    } else {
+        //cards random disribute
+        card1.innerHTML = (`<img src="${removed[0].url}" alt="carta do ${cards[0].symbol} de ${cards[0].suit}">`)
+        card2.innerHTML = (`<img src="${removed[1].url}" alt="carta do ${cards[1].symbol} de ${cards[1].suit}">`)
+        card3.innerHTML = (`<img src="${removed[2].url}" alt="carta do ${cards[2].symbol} de ${cards[2].suit}">`)
+        card4.innerHTML = (`<img src="${removed[3].url}" alt="carta do ${cards[3].symbol} de ${cards[3].suit}">`)
+        card5.innerHTML = (`<img src="${removed[4].url}" alt="carta do ${cards[4].symbol} de ${cards[4].suit}">`)
+
+        sequenceVerification(removed);
+    }
+   
+}
+
+function orderVerification(array) {
+    
     //sequence verification
+
+    let sequence;
+
+    const order = array.sort((a,b)=>{
+        if(a.symbol === 'as' || a.symbol === 'coringa'){
+            return +1
+        } else if (b.symbol === 'as' || b.symbol === 'coringa'){
+            return -1
+        } else {
+            return a.symbol - b.symbol
+        }
+    })
+
+    order.forEach((card,index)=>{
+
+        if(card.symbol === 'as'){
+
+            if( (order[index-1].symbol === 13 ||
+                order[0].symbol === 2 || 
+                order[index-1].symbol === 'coringa' && order[index - 2].symbol === 13 || 
+                order[index-1].symbol === 'coringa' && order[index-2].symbol === 'coringa' && order[index - 3].symbol === 13) &&
+                sequence != false){
+                    sequence = true; 
+            } else {
+                    sequence = false; 
+            }
+
+        } else if(card.symbol === 'coringa'){
+
+        } else {
+            
+            if(index === 0) {
+                sequence = true;
+            } else if((card.symbol - order[index-1].symbol) === 1 && sequence != false){
+                sequence = true;
+            } else {
+                sequence = false;
+            }
+        }
+
+    })
+
+    return sequence
+
+}
+
+function sequenceVerification(array) {
     const dois = []
     const tres = []
     const quatro = []
@@ -330,9 +391,8 @@ function distribute() {
     const copas = []
     const paus = []
     const coringa = []
-    const tst = []
 
-    sort.forEach((card) =>{
+    array.forEach((card) =>{
         //suit verification
         if(card.suit === 'ouros'){
             ouros.push(card)
@@ -364,25 +424,101 @@ function distribute() {
             dez.push(card)
         } else if (card.symbol === 'as') {
             as.push(card)
-        } else if (card.symbol === 'valete') {
+        } else if (card.symbol === 11) {
             valete.push(card)
-        } else if (card.symbol === 'dama') {
+        } else if (card.symbol === 12) {
             dama.push(card)
-        } else if (card.symbol === 'rei') {
+        } else if (card.symbol === 13) {
             rei.push(card)
         } else {
             coringa.push(card)
         }
 
-        tst.push(card)
     })
 
-    console.log(tst)
+    const dataCard = [
+        dois,
+        tres,
+        quatro,
+        cinco,
+        seis,
+        sete,
+        oito,
+        nove,
+        dez,
+        valete,
+        dama,
+        rei,
+        as,
+        coringa
+    ]
 
-    //sequence type
-    if(ouros.length = 5 || copas.length = 5 || espadas.length = 5 || paus.length = 5) {
-        sequenceTxt.textContent = 'Parabéns! Você acabou de receber um Straight Flush'
-    } else if( ) {
+    const dataSuit = [
+        ouros,
+        paus,
+        copas,
+        espadas,
+        coringa
+    ]
 
-    }
+    result(dataCard,dataSuit,array)
 }
+
+function result(arrayCard, arraySuit, arrayDeck) {
+    //sequence type
+    let straightFlush = 0;
+    let quadra = 0;
+    let sequencia = 0;
+    let trinca = 0;
+    let par = 0;
+
+    //type verification
+    arrayCard.forEach((group, index)=>{
+        if( group.length === 4 ||
+            (index != 13 && group.length === 3 && arrayCard[13].length === 1) ||
+            (index != 13 && group.length === 2 && arrayCard[13].length === 2)){
+            quadra += 1
+        } else if(group.length === 3 ||
+            (par === 0 && index != 13 && group.length === 2 && arrayCard[13].length === 1) ||
+            (index != 13 && group.length === 1 && arrayCard[13].length === 2)) {
+            trinca += 1
+        } else if(group.length === 2 ||
+            (trinca === 0 && index != 13 && group.length === 1 && arrayCard[13].length === 1 && par != 1 )) {
+            par += 1
+        } else if(orderVerification(arrayDeck) === true) {
+            sequencia += 1
+            straightFlush += 1
+        }
+        console.log(arrayCard)
+        console.log(straightFlush,quadra,sequencia,trinca,par)
+    })
+
+    arraySuit.forEach((group, index)=>{
+        if( group.length === 5 ||
+            (index != 4 && group.length === 4 && arrayCard[4].length === 1) ||
+            (index != 4 && group.length === 3 && arrayCard[4].length === 2)){
+            straightFlush += 1
+        }
+    })
+
+    //result
+    if(straightFlush === 2){
+        sequenceTxt.innerHTML = ('Parabéns! Você obteve um Straight Flush!')
+    } else if (quadra === 1){
+        sequenceTxt.innerHTML = ('Parabéns! Você obteve uma Quadra!')
+    } else if (trinca === 1 && par === 1 || trinca === 2){
+        sequenceTxt.innerHTML = ('Parabéns! Você obteve um Full House!')
+    } else if (sequencia === 1){
+        sequenceTxt.innerHTML = ('Parabéns! Você obteve uma Sequência!')
+    } else if (trinca === 1){
+        sequenceTxt.innerHTML = ('Parabéns! Você obteve uma Trinca!')
+    } else if (par === 2){
+        sequenceTxt.innerHTML = ('Parabéns! Você obteve Dois Pares!')
+    } else if (par === 1){
+        sequenceTxt.innerHTML = ('Parabéns! Você obteve um Par!')
+    } else {
+        sequenceTxt.innerHTML = ('Infelizmente, você não obteve nenhuma sequencia')
+    }
+
+}
+

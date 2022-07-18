@@ -1,0 +1,87 @@
+/*app*/
+#quoter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vh 0 0;
+    margin: 3vh 5vw;
+    width: 90vw;
+    min-height: 82vh;
+    background-color: rgb(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    gap: 5vh;
+}
+
+#quoter h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+}
+
+#quoter p, #quoter label  {
+    font-size: 1.2vw;
+    line-height: 6vh;
+}
+
+.bar {
+    width: 20vw;
+    height: 8vh;
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bar option {
+    background-color: black;
+}
+
+#inputs {
+    display: flex;
+    gap: 5vw;
+}
+
+#inputs div {
+    display: flex;
+    flex-direction: column;
+}
+
+#quoter button {
+    margin-top: 6vh;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    width: 20vw;
+    height: 8vh;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s all;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+}
+
+#quoter button:hover {
+    border: 2px solid #05c36c;
+    color: #05c36c;
+}
+
+/*table*/
+#quoter th, #quoter td {
+    border: 1px solid ;
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    font-size: 1vw;
+}
+
+#quoter th {
+    font-weight: 500;
+}
+
+

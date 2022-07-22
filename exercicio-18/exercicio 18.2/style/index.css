@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#app div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#app img{
+    width: auto;
+    height: 40vh;
+}
+
+button, p {
+    font-size: 1.5vw;
+}
+
+button{
+    width: 20vw;
+    height: 10vh;
+    font-weight: 700;
+    border: 1.5px solid;
+    background-color: white;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}

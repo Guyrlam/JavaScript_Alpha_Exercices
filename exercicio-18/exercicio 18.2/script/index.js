@@ -53,7 +53,7 @@ async function pullCard(deck_id){
 
 async function cardObj (data){
     try {
-        const arr = await Promise.all([pullCard(data),pullCard(data),pullCard(data),pullCard(data),pullCard(data),])
+        const arr = await Promise.all([pullCard(data),pullCard(data),pullCard(data),pullCard(data),pullCard(data)])
         let image;
         let resp;
         for(let i = 0; i < 5; i++){

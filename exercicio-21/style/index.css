@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*body*/
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*app*/
+#app{
+    width: 40vw;
+    height: 40vw;
+    border: 2px solid black;
+    position: relative;
+    background-color: green;
+    overflow: hidden;
+}
+
+/*track*/
+#track{
+    position: absolute;
+    width: 70%;
+    height: 110%;
+    top: -5%;
+    left: 15%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.limit{
+    width: 4%;
+    height: 100%;
+    background-color: black;
+}
+
+#line{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2%;
+    height: 100%;
+}
+
+.white{
+    width: 100%;
+    height: 12%;
+    background-color: white;
+}
+
+/*hero*/
+#hero{
+    width: 4%;
+    height: 4%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+/*coin*/
+.coin{
+    width: 3%;
+    height: 5%;
+    background-color: yellow;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/*score*/
+#score{
+    height: 40vw;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 4vw;
+    font-size: 1.8vw;
+    font-weight: 900;
+}
